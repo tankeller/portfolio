@@ -14,8 +14,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
-main,
 menu,
 nav,
 section,
@@ -619,4 +617,17 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/* Custom CSS */
+main {
+  margin: 2rem auto 2rem;
+  max-width: 90vw;
+  width: 550px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem calc((100vw - 550px) / 2);
 }
