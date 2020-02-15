@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem calc((100vw - 900px) / 2);
+  border-bottom: 1px solid #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin: auto 0.5rem;
+  text-decoration: none;
+  color: darkgray;
+}
