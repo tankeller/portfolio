@@ -6,13 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -32,6 +25,21 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layout/layout.js"),
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
